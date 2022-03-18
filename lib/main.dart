@@ -28,8 +28,16 @@ class MyApp extends StatelessWidget {
                 BoxShadow(
                   color: Colors.grey.shade600,
                   spreadRadius: 1,
-                  blurRadius: 15,
-                  offset: const Offset(0, 15),
+                  blurRadius: 5,
+                  offset: const Offset(0, 5),
+                ),
+                BoxShadow(
+                  color: Colors.grey.shade300,
+                  offset: const Offset(-5,0),
+                ) ,
+                BoxShadow(
+                  color: Colors.grey.shade300,
+                  offset: const Offset(5,0),
                 )
               ],
             ),
