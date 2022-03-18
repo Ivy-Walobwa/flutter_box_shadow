@@ -24,7 +24,9 @@ class MyApp extends StatelessWidget {
             child: const Icon(Icons.downhill_skiing),
             decoration: BoxDecoration(
               color: Colors.grey.shade300,
-
+              boxShadow: [
+                BoxShadow(color: Colors.grey.shade600)
+              ],
             ),
           ),
         ),
