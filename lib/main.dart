@@ -25,7 +25,11 @@ class MyApp extends StatelessWidget {
             decoration: BoxDecoration(
               color: Colors.grey.shade300,
               boxShadow: [
-                BoxShadow(color: Colors.grey.shade600, spreadRadius: 1)
+                BoxShadow(
+                  color: Colors.grey.shade600,
+                  spreadRadius: 1,
+                  blurRadius: 15,
+                )
               ],
             ),
           ),
