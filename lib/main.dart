@@ -28,18 +28,25 @@ class MyApp extends StatelessWidget {
                 BoxShadow(
                   color: Colors.grey.shade600,
                   spreadRadius: 1,
-                  blurRadius: 5,
-                  offset: const Offset(0, 5),
+                  blurRadius: 15,
+                  offset: const Offset(5, 5),
                 ),
-                BoxShadow(
-                  color: Colors.grey.shade300,
-                  offset: const Offset(-5,0),
-                ) ,
-                BoxShadow(
-                  color: Colors.grey.shade300,
-                  offset: const Offset(5,0),
-                )
+                const BoxShadow(
+                    color: Colors.white,
+                    offset: Offset(-5, -5),
+                    blurRadius: 15,
+                    spreadRadius: 1),
               ],
+              gradient: LinearGradient(
+                begin: Alignment.topLeft,
+                end: Alignment.bottomRight,
+                colors: [
+                  Colors.grey.shade200,
+                  Colors.grey.shade300,
+                  Colors.grey.shade400,
+                  Colors.grey.shade500,
+                ],
+              ),
             ),
           ),
         ),
